@@ -1,0 +1,221 @@
+.help-screen {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.open-requests,
+.language-switch,
+.profile-icon {
+  font-size: 16px;
+  color: #777;
+  margin-left: 20px;
+}
+
+.language-switch span {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.profile-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.main-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+
+.main-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.main-subtitle {
+  font-size: 18px;
+  color: #777;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(50% - 20px);
+  margin: 10px;
+}
+
+.card-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-icon {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.card-content h2 {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  font-size: 16px;
+  color: #777;
+  margin: 0;
+}
+
+.card-action {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.chat-card .chat-options,
+.social-card .social-options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.chat-options button,
+.social-options button {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chat-options button:hover,
+.social-options button:hover {
+  background-color: #e0e0e0;
+}
+
+.query-card .query-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.query-form input,
+.query-form textarea {
+  flex: 1 1 calc(50% - 20px);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.query-form textarea {
+  flex: 1 1 100%;
+  min-height: 100px;
+}
+
+.query-form button {
+  flex: 1 1 100%;
+  padding: 10px 0;
+  margin: 10px;
+  background-color: #ff4c68;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.query-form button:hover {
+  background-color: #e43b55;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .open-requests,
+  .language-switch,
+  .profile-icon {
+    margin: 10px 0;
+  }
+
+  .main-title {
+    font-size: 24px;
+  }
+
+  .main-subtitle {
+    font-size: 16px;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+
+  .card-icon {
+    font-size: 24px;
+  }
+
+  .card-content h2 {
+    font-size: 18px;
+  }
+
+  .card-content p {
+    font-size: 14px;
+  }
+
+  .card-action {
+    font-size: 18px;
+  }
+
+  .chat-options button,
+  .social-options button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .query-form input,
+  .query-form textarea {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+}

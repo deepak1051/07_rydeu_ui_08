@@ -1,0 +1,31 @@
+/* src/SearchBox.css */
+.search-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.search-tabs button {
+  margin-right: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #ff3366;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
